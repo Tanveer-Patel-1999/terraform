@@ -1,0 +1,65 @@
+Function in terraform
+=====================
+
+how to used Function
+--------------------
+synatx
+------
+ value = "${function_name()}
+
+ types of functions
+ -----------------
+
+ String functions
+ =================
+
+ 1: join()
+ ----------
+ --> Join function take two arguments
+    1:seperator  2: varibale_name
+
+example: 
+        output "printfirst" {
+                value = "${join(",",var.users)}"
+        }
+
+2: upper() : 
+---------
+-->upper() function is used upper case 
+--> synatx upper(varibale_name[0])  : index when used list
+--> synatx upper(varibale_name) --> string
+
+
+
+example:
+        output "upperCase" {
+                value = "${upper(var.user)}"
+  
+        }
+
+3 : lower()
+-----------
+--> synatx lower(varibale_name) --> string
+
+example:
+        output "lowerCase" {
+                value = "${lower(var.user)}"
+  
+        }
+
+4 : title : first word should be upper case are remaining latter as same it.
+---------
+
+--> synatx title(varibale_name) --> string
+
+example:
+        output "titleCase" {
+                value = "${title(var.user)}"
+  
+        }
+
+5 : lookup() --> it is used to look into the decitionary 
+-----------
+--> It is take two parameters
+        1: decitionary_name     2: kis ki value read krna hai
+        

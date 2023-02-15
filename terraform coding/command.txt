@@ -1,0 +1,19 @@
+1 : terraform plan
+          1 : terraform plan -var "username=Tanveer"
+          2 : terraform plan -var 'users=["Tanveer","Anik","Asif"]'
+
+          # run a custom abc.tfvars file  
+          ==============================
+            1 : terraform plan --> by defult it take terraform.tfvars
+            2 : terraform plan -var-file=custom.tfvars
+            3 :  QA -->    terraform plan -var-file=qa.tfvars
+            4 : DEV -->   terraform plan -var-file=dev.tfvars
+            5 : stage --> terraform plan -var-file=stage.tfvars
+
+            
+2 : terraform provider
+3 : terraform init
+4 : terraform apply
+5 : terraform apply --auto-approve
+6 : terraform destroy
+7 : terraform destroy --target <resource_type>.<value>

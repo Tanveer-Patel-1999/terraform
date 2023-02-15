@@ -1,0 +1,39 @@
+variable file : terraform.tfvars
+=============
+1: create a file in the same folder with the fixed name that is : terraform.tfvars
+2: In this file define all the variable
+3: and run the terraform script : terraform plan
+
+--> main used of this file is which environment used which file that can be define
+
+
+
+# run a custom file 
+# terraform plan --> by defult it take terraform.tfvars
+# terraform plan -var-file=custom.tfvars
+# QA -->    terraform plan -var-file=qa.tfvars
+# DEV -->   terraform plan -var-file=dev.tfvars
+# stage --> terraform plan -var-file=stage.tfvars
+
+
+
+variable reade from
+===================
+1: from user interactive level
+2: through command line
+3: using file_name.tfvars files
+
+how to read variable from terminal to terraform  : using TF_VAR_variableName
+=======================================
+# create an variable read from environment
+# echo $lastName --> declear a variable
+# export lastname=patel
+# echo $lastName
+
+# export name=tanveer
+# terraform plan
+# it will asked lastname 
+
+# export TF_VAR_lastname
+# terraform 
+# It will not asked lastname

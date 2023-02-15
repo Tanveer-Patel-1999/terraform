@@ -1,0 +1,38 @@
+Terrafrom : we can Infrastrutre using Terrafrom
+=========
+
+
+Terrafrom
+---------
+1 : In Terrafrom we write " Infrastrutre " as a code.
+2 : Using Terrafrom we create " Infrastrutre " in Cloud provider.(aws , azure, ggogle etc)
+
+q :	why we Terrafrom?
+ans : we can create an "Infrastrutre" as a code in "all cloud provider".
+
+q : when we used Terrafrom?
+ans : when you create an Infrastrutre from scracath that time.
+
+q: diiference b/w Terrafrom and Ansible?
+ans :
+--> Terrafrom is an Infrastrutre as code tool
+--> we can create and delete an Infrastrutre using a single command using Terrafrom
+--> Ansible we define a configuration.
+--> we can delete an Infrastrutre using Ansible you have to write one new file that delete the Infrastrutre.
+--> we can configure the Infrastrutre on "OS"  level that time you go for Terrafrom.
+
+
+syntax
+======
+	Terrafrom --> create Infrastrutre --> configure ---> using Ansible
+
+
+command
+=======
+1: terraform
+2: terraform plan : to run file.tf file
+3: terraform configuration : secret ket and access key
+
+
+--> in  one folder multiple file is there when u run these file these files are loades on the bases of "Alphabtically order".
+
